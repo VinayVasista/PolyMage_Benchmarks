@@ -7,7 +7,7 @@ CXX_FLAGS=-openmp -ipo -O3 -xhost -fPIC -shared
 all: unsharp_mask graph.png
 
 unsharp_mask: unsharp.so
-	python main.py ../../images/grand_canyon2.jpg 0.001 3 11
+	python main.py ../../images/grand_canyon2.jpg 0.001 3 11 2048 2048
 
 unsharp.so: unsharp_mask_polymage.cpp
 	$(CXX) $(CXX_FLAGS) unsharp_mask_polymage.cpp -o unsharp.so

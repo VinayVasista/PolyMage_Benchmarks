@@ -3,6 +3,6 @@ Tile Sizes : [16, 256]
 Group Size : 5
 
 Time taken
-on target  : 21.3186 ms
+on target  : 15.7214 ms
 Size       : 2048 x 2048 x 3
 Cores      : 16
