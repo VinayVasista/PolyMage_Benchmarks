@@ -1,16 +1,20 @@
 Compiling the cpp file as a shared library
 ==========================================
-To compile all the apps, run
+To compile all apps, run
 
 $ make
 
-To play the video demo, run the python script as
+To adjust compiler and flags, see Makefile.
+
+For the video demo, run the python script as
 
 $ python video_demo.py path/to/video/file
 
-The implementations are generated for generic resolution.
+The implementations are for a generic resolution.
 
-For a sample video try https://peach.blender.org/download/ or
+For a sample video try 
+https://peach.blender.org/download/ 
+or
 http://www.divx.com/en/devices/profiles/video
 
 Options in the demo
