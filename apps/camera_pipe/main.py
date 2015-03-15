@@ -37,7 +37,7 @@ from utils import clock, initOptionals, \
                    printLine, image_clamp
 
 # shared library, and function
-libcamera = ctypes.cdll.LoadLibrary("./camera.so")
+libcamera = ctypes.cdll.LoadLibrary("./camera_pipe.so")
 camera_pipe = libcamera.pipeline_process
 
 # initialize the app. parameters
