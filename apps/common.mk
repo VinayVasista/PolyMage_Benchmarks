@@ -14,8 +14,10 @@ $(APP)_opt.so: $(APP)_polymage.cpp
 $(APP)_naive.so: $(APP)_polymage_naive.cpp
 	$(CXX) $(CXX_FLAGS) $< -o $@
 
-graph:
-	dot -Tpng graph.dot >graph.png
+graph: graph.png
+
+graph.png: graph.dot
+	dot -Tpng $< > $@
 
 clean:
 	rm -f *.pyc *.so graph.png
